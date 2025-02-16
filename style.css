@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* overflow: hidden; */
+  font-family: "Press Start 2P", system-ui;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #222;
+  color: #eee;
+  overflow: hidden;
+}
+header {
+  display: grid;
+  /* grid-template-columns: 1fr; */
+  grid-auto-rows: 1fr;
+  height: 40%;
+  width: 100%;
+  border-bottom: 5px solid white;
+  position: relative;
+  z-index: 0;
+  overflow: visible;
+}
+.again {
+  margin-top: 1.5rem;
+}
+.top-section {
+  margin: 1rem;
+  /* width: 100%; */
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.heading {
+  /* display: flex; */
+  text-align: center;
+  height: 40%;
+  overflow: visible;
+  margin-top: -1rem;
+  font-size: 2.5rem;
+}
+
+.btn {
+  border: none;
+  background-color: #eee;
+  color: #222;
+  font-size: 5vh;
+  font-family: inherit;
+  padding: 1rem 2rem;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #ccc;
+}
+.question-mark {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eee; /* Adjust the background color as needed */
+  color: #222; /* Adjust the text color to contrast with the background */
+  font-size: 3rem; /* Increase the size of the question mark */
+  position: absolute;
+  bottom: 0; /* Moves the element so it overlaps the border */
+  left: 50%;
+  padding: 1.5rem 2rem; /* Adjust padding for the size and appearance */
+  transform: translate(-50%, 50%); /* Centers the element horizontally */
+  z-index: 10;
+}
+main {
+  width: 100%;
+  height: 70%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+main .left-box {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  gap: 1rem;
+}
+main .right-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Use justify-content for vertical spacing */
+  /* align-items: center; Align items to the center horizontally */
+  /* background-color: rebeccapurple; */
+  height: 100%; /* Ensure the right-box takes up the full height */
+  padding: 1rem; /* Optional: Add padding for better spacing */
+  gap: 5rem;
+  font-size: 1.3rem;
+}
+input[type="number"] {
+  background: none;
+  padding: 1.5rem;
+  color: white;
+  width: 50%;
+  font-size: 200%;
+  border: 3px solid white;
+  text-align: center;
+}
+@media screen and (max-width: 800px) {
+  .btn {
+    font-size: 1rem;
+    /* background-color: black; */
+    padding: 1rem;
+  }
+  .heading {
+    font-size: 2rem;
+  }
+  input[type="number"] {
+    width: 75%;
+  }
+  main .right-box {
+    font-size: 1rem;
+  }
+  .question-mark {
+    /* background-color: red; */
+    font-size: 2rem;
+  }
+  .between {
+    font-size: 0.8rem;
+  }
+  .again {
+    padding: 0.8rem;
+  }
+}
